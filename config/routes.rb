@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :schools do
         resources :users
       end
-      match 'auth/login', to: 'auth#login', via: [:post]
+      resources :auth
     end
   end
 end

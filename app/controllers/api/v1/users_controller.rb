@@ -20,5 +20,4 @@ class Api::V1::UsersController < ApplicationController
       permit(:password, :password_confirmation, :email, :date_of_birth)
   end
 
-
 end
